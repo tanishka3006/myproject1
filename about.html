@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Setup</title>
+    <link rel="stylesheet" href="{% static 'about.css'%}">
+</head>
+<body>
+    <div class="container">
+        <div id="step1">
+            <h2>Step 1: Add Your Display Name</h2>
+            <input type="text" id="displayNameInput" placeholder="Enter your display name">
+            <button onclick="nextStep()">Next</button>
+        </div>
+        <div id="step2" style="display: none;">
+            <h2>Step 2: Add Your Bio (max 300 characters)</h2>
+            <div class="step-content">
+                <div id="bioContainer">
+                    <textarea id="bioInput" placeholder="Write a short bio about yourself"></textarea>
+                </div>
+                <div id="imagePreview" style="display: none;">
+                    <div id="imageContainer">
+                        <img id="uploadedImage" src="placeholder.png" alt="Uploaded Image">
+                    </div>
+                </div>
+            </div>
+            <div class="char-count" id="charCount">300 characters left</div>
+            <button onclick="nextStep()">Next</button>
+            <button onclick="skipStep()">Skip</button>
+        </div>
+        <div id="step3" style="display: none;">
+            <h2>Step 3: Add a Photo of Yourself</h2>
+            <input type="file" accept="image/*" id="photoInput">
+            <a href="{% url 'dashboard'%}"><button onclick="submitProfile()">Submit</button></a>
+            <a href="{% url 'dashboard'%}"><button onclick="skipStep()">Skip</button></a>
+        </div>
+    </div>
+    <script src="{% static 'about.js'%}"></script>
+</body>
+</html>

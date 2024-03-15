@@ -1,0 +1,57 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link rel="stylesheet" href="{% static 'post-reg.css'%}">
+    <style>
+    
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h1>Welcome {{username}} !</h1>
+        <br>
+        <button id="nextButton" class="hidden" onclick="showGender()">Next</button>
+    </div>
+    
+    <div id="gender" class="hidden">
+        <h2>What is your gender?</h2>
+        <button onclick="showLocation('male')">Male</button>
+        <button onclick="showLocation('female')">Female</button>
+        <button onclick="showLocation('other')">Other</button>
+    </div>
+    
+    <div id="location" class="hidden">
+        <h2>Where are you located?</h2>
+        <div class="location-wrapper">
+            <select id="locationDropdown">
+                <option value="">Select</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <button id="proceedButton" onclick="proceedToHobbies()">Proceed</button>
+        </div>
+    </div>
+
+    <div id="hobbies" class="hidden">
+        <h2>What are your hobbies?</h2>
+        <input type="text" id="hobbyInput" placeholder="Enter your hobby">
+        <button onclick="addHobby()">Add</button>
+        <div id="hobbyList"></div>
+        <a href="{% url 'about'%}"><button onclick="proceedToDashboard()">Proceed</button></a>
+    </div>
+    
+    <div id="maxLimitPopup" class="popup hidden">
+        <div class="popup-content">
+            <p>Maximum limit reached!</p>
+            <button onclick="hideMaxLimitPopup()">OK</button>
+        </div>
+    </div>
+
+    <script src="{% static 'post-reg.js'%}"></script>
+</body>
+</html>

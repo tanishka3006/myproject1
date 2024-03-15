@@ -1,0 +1,83 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIBBONN</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="{%static 'logo1.png'%}" alt="Your Logo">
+        </div>
+        <div class="title">
+            <h1>Ribbonn</h1>
+            <p>Because We Care</p>
+        </div>
+    </header>
+    
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#resources">Resources</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="intro">
+    <h2>Let Us Introduce Ourselves</h2>
+    <div class="vidcontainer">
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/wflz08-T-fM?si=O6vPcNpkCFOeyYQT"  frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<section id="maintext">
+    <h2>Support for people with STDs</h2>
+    <p>Ribbonn provides support!</p>
+</section>
+
+<section id="reg-area">
+    <div class="button-wrap">
+        <div class="new-user">
+            New Here? Find Your Kind!
+        </div>
+        <a href="{% url 'register'%}"><button class="register">Register</button></a>
+    </div>
+
+    <div class="button-wrap">
+        <div class="returning-user">
+            Returning User !
+        </div>
+        <a href="{% url 'login' %}"><button class="sign-in">LogIn</button></a>
+    </div>
+</section>
+
+<main>
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Welcome to Ribbonn, your trusted sanctuary for individuals navigating life with STDs. We understand the challenges and complexities that come with such diagnoses, and we're here to offer unwavering support, education, and community. At Ribbonn, you're not alone—we foster a judgment-free environment where you can find solace, resources, and connections with others who share similar experiences. Our mission is to empower you with knowledge, compassion, and the tools to thrive. Whether you seek information, camaraderie, or simply a listening ear, Ribbonn is your haven. Embrace the journey ahead with confidence, knowing that here, acceptance and understanding abound. Welcome home to Ribbonn.</p>
+    </section>
+    <section id="about">
+        <h2>Why Ribbonn?</h2>
+        <p>Choose Ribbonn for unwavering support, education, and community. We're more than just a platform—we're a lifeline for those navigating life with STDs. Our commitment to creating a safe, judgment-free space sets us apart. Here, you'll find a wealth of resources, from informative articles to supportive forums, all designed to empower and uplift you. Our dedicated team ensures your journey is met with compassion and understanding every step of the way. With Ribbonn, you're not alone—we're here to guide you towards a brighter, more empowered future. Join us and discover the difference that compassionate support can make.</p>
+    </section>
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>STD resources offer vital information, support, and guidance to individuals navigating the challenges of sexually transmitted diseases. They provide education on prevention, treatment options, and coping strategies. These resources also foster a sense of community and understanding, reducing stigma and promoting overall well-being. Accessing STD resources empowers individuals to make informed decisions about their health and live fulfilling lives.You can access some online available resources by simply clicking on the button provided below.</p>
+       <a href="{% url 'resources'%}"><button class="resourcesbutton">Resources</button></a>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Connect with us on Instagram <a href="https://www.instagram.com/officialredribbon/" target="_blank" id="insta" style="color: red; text-decoration: none;">@officialredribbon</a> for updates, support, and a vibrant community. Stay informed, engage with others, and join the conversation on sexual health and well-being. Together, let's break the stigma and build a supportive network where everyone feels empowered and understood. Follow us now and be part of the movement towards a healthier, happier future</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Ribbonn</p>
+</footer>
+</body>
+</html>

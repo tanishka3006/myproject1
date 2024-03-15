@@ -1,0 +1,229 @@
+@keyframes fadeInButton {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#nextButton {
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInButton 0.5s ease-in-out forwards;
+    padding: 10px 20px;
+    background-color: #ef233c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#nextButton:hover {
+    background-color: #d90429;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.location-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#locationDropdown {
+    margin-bottom: 10px;
+}
+
+#proceedButton {
+    display: none;
+}
+
+#welcome,
+#gender,
+#location {
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-size: 36px;
+    color: white;
+}
+
+button {
+    padding: 20px 40px;
+    margin: 20px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: #b33939;
+}
+
+select {
+    padding: 20px;
+    font-size: 20px;
+    background-color: #8d99ae;
+    color: #2b2d42;
+}
+
+#gender button {
+    padding: 10px 20px;
+    background-color: #ef233c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+#gender button:hover {
+    background-color: #d90429;
+}
+
+#hobbyList {
+    margin-top: 10px;
+}
+
+#hobbyList div {
+    background-color: #ef233c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#aboutMe {
+    display: none;
+}
+
+.location-wrapper {
+    margin-bottom: 10px;
+}
+
+.white-background {
+    background-color: #ef233c;
+    color: white;
+}
+
+#maxLimitPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#maxLimitPopup p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cross {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    float: left;
+    margin-right: 5px;
+    fill: #ef233c;
+}
+
+.hobby-item {
+    clear: both;
+}
+
+.hobby-list {
+    margin-top: 10px;
+}
+
+#proceedButton {
+    display: block;
+    margin: 20px auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#hobbies {
+    text-align: center;
+}
+
+#hobbyList {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#hobbyInput {
+    padding: 10px;
+    border: 2px solid #8d99ae;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+#hobbyInput {
+    color: white;
+    background-color: #ef233c;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    width: 300px; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup button {
+    margin-top: 20px;
+    background-color: #ef233c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.popup button:hover {
+    background-color: #d90429;
+}

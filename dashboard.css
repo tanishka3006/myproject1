@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    color: white;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #222222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.welcome-back {
+    margin-bottom: 20px;
+}
+
+.welcome-back h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 36px; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.announcement {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.announcement-heading {
+    color: #ff0000;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.announcement p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.announcement a {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.announcement a:hover {
+    color: #cc0000;
+}
+
+.blog-btn {
+    display: block;
+    background-color: #ff0000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.blog-btn:hover {
+    background-color: #cc0000;
+}
+
+.welcome-line {
+    width: 100%; 
+    border: 2px solid white;
+    margin: 10px 0;
+}
+
+.announcement {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: calc(100% - 250px); 
+    margin-left: -250px; 
+    width: 100%; 
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #757575; 
+    border: 1px solid #000000; 
+    padding: 40px; 
+    z-index: 9999;
+    color: #ffffff; 
+    width: 60%; 
+    max-width: 600px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.popup .popup-content {
+    margin-top: auto;
+    text-align: center; 
+    width: 100%; 
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 24px; 
+    color: #ffffff; 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.close-btn:hover {
+    color: #cc0000; 
+}

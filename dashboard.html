@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'dashboard.css'%}">
+</head>
+<body>
+
+<div class="sidebar">
+    <ul>
+        <li id="chat-btn" onclick="openPopup()">Chats</li>
+        <li id="blog-btn" onclick="openPopup()">Make a Blog</li>
+        <li id="friends-btn" onclick="openPopup()" >Friend List</li>
+    </ul>
+</div>
+<div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <p>Available in the next update.</p>
+    </div>
+</div>
+
+<div class="content">
+    <div class="welcome-back">
+        <h2>Welcome Back {{username}}</h2>
+        <hr class="welcome-line">
+    </div>
+
+<div class="content">
+    <div class="announcement">
+        <h2 class="announcement-heading">Exciting News! 🎉</h2>
+        <p>We are thrilled to announce that our website has undergone a significant update and is now better than ever before! After weeks of hard work and dedication from our team, we are delighted to unveil a sleeker, more intuitive platform designed to enhance your experience.</p>
+
+        <p>With this update, we've implemented several new features aimed at making your browsing experience smoother and more enjoyable. From improved navigation to enhanced search functionality, we've listened to your feedback and incorporated changes to ensure that finding what you need is easier than ever. Whether you're browsing our products, exploring our services, or seeking information, our updated website is here to serve you better.</p>
+
+        <p>But that's not all – we're also excited to invite you to join us on Instagram! Follow our page <a href="https://www.instagram.com/officialredribbon/" target="_blank">@officialredribbon</a> to stay updated on the latest news, promotions, and behind-the-scenes glimpses of our team in action. As part of our growing online community, you'll have access to exclusive content, special offers, and the opportunity to engage with us directly.</p>
+
+        <p>Your support means the world to us, and we're committed to providing you with the best possible experience across all our platforms. Whether you're visiting our website or connecting with us on social media, we're dedicated to delivering excellence every step of the way.</p>
+
+        <p>Thank you for being a part of our journey, and we can't wait to continue sharing exciting updates and experiences with you. Don't forget to follow us on Instagram <a href="https://www.instagram.com/officialredribbon/" target="_blank">@officialredribbon</a> and explore our newly updated website today!</p>
+
+        <p>Best Regards,<br>
+        Ribbonn Team</p>
+    </div>
+</div>
+
+<script src="{% static 'dashboard.js'%}"></script>
+</body>
+</html>
